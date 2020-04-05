@@ -39,7 +39,7 @@ testloader = torch.utils.data.DataLoader(testset, batch_size=FLAGS["batch_size"]
 
 ## Downloading and Loading Madry Lab Pre-Trained Model on CIFAR10.
 
-# !wget "https://www.dropbox.com/s/yxn15a9zklz3s8q/imagenet_linf_8.pt?dl=0"
+# !wget "https://www.dropbox.com/s/c9qlt1lbdnu9tlo/cifar_linf_8.pt"
 
 ds = CIFAR('./data/cifar-10-batches-py')
 model, _ = make_and_restore_model(arch='resnet50', dataset=ds, resume_path='./cifar_linf_8.pt')
@@ -134,5 +134,4 @@ net.eval()
 
 PATH = './cifar-'+ str(int(FLAGS["eps"] * 255)) '-' + str(FLAGS["n_epoch"]) + '.pth'
 torch.save(net.state_dict(), PATH)
-
 
