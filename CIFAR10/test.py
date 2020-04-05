@@ -30,7 +30,7 @@ testloader = torch.utils.data.DataLoader(testset, batch_size=128,
 
 ## Downloading and Loading Madry Lab Pre-Trained Model on CIFAR10.
 
-# !wget "https://www.dropbox.com/s/yxn15a9zklz3s8q/imagenet_linf_8.pt?dl=0"
+# !wget "https://www.dropbox.com/s/c9qlt1lbdnu9tlo/cifar_linf_8.pt"
 
 ds = CIFAR('./data/cifar-10-batches-py')
 model, _ = make_and_restore_model(arch='resnet50', dataset=ds, resume_path='./cifar_linf_8.pt')
@@ -43,6 +43,12 @@ net = model
 PATH = './cifar-32-5.pth'
 net.load_state_dict(torch.load(PATH))
 net.eval()
+
+
+## GPU!
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+net.to(device)
 
 
 ## PGD attack.
@@ -92,5 +98,4 @@ for data in testloader:
     total += labels.size(0)
     correct += (predicted == labels).sum().item()
 print('Adversarial Accuracy of the network on the 10000 test images: %f %%' % (100 * correct / total))
-
 
