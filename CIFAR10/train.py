@@ -132,6 +132,6 @@ print('Finished Training')
 
 net.eval()
 
-PATH = './cifar-'+ str(int(FLAGS["eps"] * 255)) '-' + str(FLAGS["n_epoch"]) + '.pth'
+PATH = './cifar-'+ str(int(FLAGS["eps"] * 255)) + '-' + str(FLAGS["n_epoch"]) + '.pth'
 torch.save(net.state_dict(), PATH)
 
