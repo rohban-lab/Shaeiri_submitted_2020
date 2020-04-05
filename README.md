@@ -2,13 +2,15 @@
 
 This repository contains pre-trained models and codes to reproduce the main experiments of our paper:
 
-**Towards Deep Learning Models Resistant to Large Perturbations**  
-*Amirreza Shaeiri, Rozhin Nobahari, Mohammad Hossein Rohban*  
+**Towards Deep Learning Models Resistant to Large Perturbations**
+*Amirreza Shaeiri, Rozhin Nobahari and Mohammad Hossein Rohban*
 https://arxiv.org/abs/2003.13370
 
-While “adversarial training” fails to train a deep neural network given a large, but reasonable, perturbation magnitude, in this paper, we propose a simple yet effective initialization of the network weights that makes learning on higher levels of noise possible. We evaluate this idea rigorously on MNIST (ε up to ≈ 0.40) and CIFAR10 (ε up to ≈ 32/255) datasets assuming the l∞ attack model.
+While “adversarial training” fails to train a deep neural network given a large, but reasonable, perturbation magnitude. In this paper, we propose a simple yet effective initialization of the network weights that makes learning on higher levels of noise possible. We evaluate this idea rigorously on MNIST (ε up to ≈ 0.40) and CIFAR10 (ε up to ≈ 32/255) datasets assuming the l∞ attack model. Also, we have interesting theoretical results about the optimal robust classifier. 
+
 
 ## Benchmarks
+
 1. Below is a list of two models on CIFAR10 (rows) and their computed accuracies under PGD200 attack.
 
 |                 | Natural |  8/255  |  16/255 |  32/255 |
@@ -24,27 +26,39 @@ While “adversarial training” fails to train a deep neural network given a la
 | 0.3 -> 0.4 |   98%   |   94%   |   90%   |
 | IAT        |   98%   |   90%   |   91%   |
 
-Note that these accuracies might be slightly different when you run your own model.
+Note that these accuracies might be slightly different when you run your own model. Also, It is worth noting that we did not try to fine-tune any of these models to improve the accuracy.
 
 
 ## Running the code
 
-Having cloned the repository, you can reproduce our results:
+### Requirements
+```
+pandas
+numpy
+torch
+torchvision
+robustness
+```
 
 #### 1. Extended adv training on CIFAR10:
 ```
+You can use train.py in CIFAR10 folder to train your own model using extended adversarial training. Note that base model is addapted from [Madry Lab](https://github.com/MadryLab/robustness).
 ```
 
 #### 2. IAT on MNIST:
 ```
+You can use IAT.ipynb in MNIST folder to train your own model using IAT.
 ```
 
 #### 3. Extended adv training on MNIST:
 ```
+You can use extended.ipynb in MNIST folder to train your own model using extended adversarial training.
 ```
 
-
 ## Pretrained models
+```
+You can use test.py in MNIST and CIFAR10 folder to load our pre-trained models.
+```
 
 
 ## Citation
