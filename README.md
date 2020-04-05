@@ -57,7 +57,7 @@ You can use extended.ipynb in MNIST folder to train your own model using extende
 
 ## Pretrained models
 ```
-You can use test.py in MNIST and CIFAR10 folder to load our pre-trained models.
+You can use test.py in MNIST and CIFAR10 folders to load our pre-trained models.
 ```
 
 
