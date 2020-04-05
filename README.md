@@ -31,9 +31,8 @@ Note that these accuracies might be **slightly different** when you run your own
 
 ## Requirements
 ```
-pandas
 numpy
-torch
+torch==1.4.0
 torchvision
 robustness
 ```
