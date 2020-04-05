@@ -26,7 +26,7 @@ While “adversarial training” fails to train a deep neural network given a la
 | 0.3 -> 0.4 |   98%   |   94%   |   90%   |
 | IAT        |   98%   |   90%   |   91%   |
 
-Note that these accuracies might be slightly different when you run your own model. Also, It is worth noting that we did not try to fine-tune any of these models to improve the accuracy.
+Note that these accuracies might be **slightly different** when you run your own model. Also, It is worth noting that we did not try to fine-tune any of these models to improve the accuracy.
 
 
 ## Requirements
