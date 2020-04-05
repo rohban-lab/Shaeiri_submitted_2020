@@ -1,7 +1,12 @@
 # Towards Deep Learning Models Resistant to Large Perturbations
 
-This repository contains code to reproduce the main experiments of our paper [Towards Deep Learning Models Resistant to Large Perturbations](https://arxiv.org/abs/2003.13370) by Amirreza Shaeiri, Rozhin Nobahari, Mohammad Hossein Rohban. Also, you can find our pre-trained models.
+This repository contains pre-trained models and codes to reproduce the main experiments of our paper:
 
+**Towards Deep Learning Models Resistant to Large Perturbations**  
+*Amirreza Shaeiri, Rozhin Nobahari, Mohammad Hossein Rohban*  
+https://arxiv.org/abs/2003.13370
+
+While “adversarial training” fails to train a deep neural network given a large, but reasonable, perturbation magnitude, in this paper, we propose a simple yet effective initialization of the network weights that makes learning on higher levels of noise possible. We evaluate this idea rigorously on MNIST (ε up to ≈ 0.40) and CIFAR10 (ε up to ≈ 32/255) datasets assuming the l∞ attack model.
 
 ## Benchmarks
 1. Below is a list of two models on CIFAR10 (rows) and their computed accuracies under PGD200 attack.
