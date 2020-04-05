@@ -43,7 +43,7 @@ robustness
 
 #### 1. Extended adv training on CIFAR10:
 ```
-You can use train.py in CIFAR10 folder to train your own model using extended adversarial training. Note that base model is addapted from [Madry Lab](https://github.com/MadryLab/robustness).
+You can use train.py in CIFAR10 folder to train your own model using extended adversarial training. Note that base model is addapted from Madry Lab (https://github.com/MadryLab/robustness).
 ```
 
 #### 2. IAT on MNIST:
