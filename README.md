@@ -62,7 +62,7 @@ You can use test.py in MNIST and CIFAR10 folders to load our pre-trained models.
 
 
 ## Citation
-When citing this work, you should use the following bibtex:
+When citing this work, please use the following bibtex:
 
     @misc{shaeiri2020deep,
         title={Towards Deep Learning Models Resistant to Large Perturbations},
