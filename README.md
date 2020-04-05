@@ -29,9 +29,7 @@ While “adversarial training” fails to train a deep neural network given a la
 Note that these accuracies might be slightly different when you run your own model. Also, It is worth noting that we did not try to fine-tune any of these models to improve the accuracy.
 
 
-## Running the code
-
-### Requirements
+## Requirements
 ```
 pandas
 numpy
@@ -39,6 +37,9 @@ torch
 torchvision
 robustness
 ```
+
+
+## Running the code
 
 #### 1. Extended adv training on CIFAR10:
 ```
