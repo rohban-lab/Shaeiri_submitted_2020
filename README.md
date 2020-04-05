@@ -6,7 +6,7 @@ This repository contains pre-trained models and codes to reproduce the main expe
 *Amirreza Shaeiri, Rozhin Nobahari and Mohammad Hossein Rohban*  
 https://arxiv.org/abs/2003.13370
 
-While “adversarial training” fails to train a deep neural network given a large, but reasonable, perturbation magnitude. In this paper, we propose a simple yet effective initialization of the network weights that makes learning on higher levels of noise possible. We evaluate this idea rigorously on MNIST (ε up to ≈ 0.40) and CIFAR10 (ε up to ≈ 32/255) datasets assuming the l∞ attack model. Also, we have interesting theoretical results about the optimal robust classifier. 
+While “adversarial training” fails to train a deep neural network given a large, but reasonable, perturbation magnitude. In this paper, we propose a simple yet effective initialization of the network weights that makes learning on higher levels of noise possible. We evaluate this idea rigorously on MNIST (ε up to ≈ 0.40) and CIFAR10 (ε up to ≈ 32/255) datasets assuming the l-inf attack model. Also, we have interesting theoretical results about the optimal robust classifier. 
 
 
 ## Benchmarks
